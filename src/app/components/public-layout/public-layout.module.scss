@@ -1,0 +1,32 @@
+.public-layout-wrap {
+  @apply w-full h-full;
+
+  .public-layout {
+    @apply h-full flex overflow-auto;
+
+    &-left-side {
+      @apply w-[645px] bg-[#943cdd] relative;
+
+      img {
+        @apply w-full h-full object-cover;
+      }
+    }
+
+    &-right-side-wrap {
+      @apply flex-1 min-w-[0px];
+
+      .public-layout-right-side {
+        @apply h-full flex flex-col overflow-auto;
+        padding: 0 calc((100% - 382px) / 2);
+
+        &-image {
+          @apply mb-[120px] flex justify-center;
+
+          img {
+            height: 138px;
+          }
+        }
+      }
+    }
+  }
+}

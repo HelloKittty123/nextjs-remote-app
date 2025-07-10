@@ -3,6 +3,29 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+
+  --primary-primary: #943cdd;
+
+  --typography-light-theme-title: #00204d;
+  --typography-light-theme-subtitle: rgba(0, 32, 77, 0.7);
+  --typography-light-theme-label: rgba(0, 32, 77, 0.95);
+  --typography-light-theme-placeholder: rgba(0, 32, 77, 0.55);
+  --typography-light-theme-body: rgba(0, 32, 77, 0.9);
+  --info-color-info: #366ae2;
+  --typography-dark-theme-title-label: #fff;
+  --error-color-error: #e14337;
+  --warning-color-success-color-success: #39ac6d;
+
+  --background-light-theme-disable: rgba(0, 53, 128, 0.04);
+  --background-light-theme-grey-light-2: #f2f5f8;
+  --background-light-theme-grey-light-1: #f9fafb;
+  --primary-primary-background: #f6eefc;
+  --background-light-theme-white: #fff;
+  --info-color-info-background: #edf2fd;
+
+  --border-light-theme-border-1: rgba(0, 53, 128, 0.35);
+  --border-light-theme-border-2: rgba(0, 53, 128, 0.15);
+  --typography-light-theme-disable: rgba(0, 32, 77, 0.25);
 }
 
 @theme inline {
@@ -14,7 +37,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #0a0a0a;  
     --foreground: #ededed;
   }
 }
@@ -22,5 +45,7 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Inter', sans-serif !important;
+  width: 100vw;
+  height: 100vh;
 }
